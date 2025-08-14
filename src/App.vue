@@ -109,6 +109,14 @@ const handleDownload = () => {
 
 <template>
   <div class="container">
+    <h1 class="title">
+      <p>
+        <a href="https://github.com/magicFeirl/kks-to-kk-card-online" target="_blank">恋活！Sunshine 角色卡转换</a>
+      </p>
+      <p>
+        Koikatsu! Sunshine Character Card to Koikatsu Character Card
+      </p>
+    </h1>
     <div :class="{ active: dropover }" class="droparea" @dragover.prevent="dropover = true"
       @dragleave="dropover = false" @drop.prevent="handleDropFile" @click="handleOpenUploadDialog">
       <div class="droparea-inner">
@@ -161,7 +169,25 @@ const handleDownload = () => {
 .container {
   display: flex;
   width: 100%;
-  margin-top: 10vh;
+  margin-top: 5vh;
+
+  .title {
+    font-size: 0.9rem;
+    text-align: center;
+
+    p {
+      margin-bottom: 5px;
+
+      a {
+        text-decoration: none;
+        color: #00b0ea8d;
+
+        &:hover {
+          color: #00AEEA;
+        }
+      }
+    }
+  }
 
   flex-flow: column;
   justify-content: center;
@@ -219,7 +245,7 @@ const handleDownload = () => {
 
     .download-button,
     .zip-button {
-      width: 11rem;
+      width: 13rem;
     }
 
     .clean-button {
