@@ -122,19 +122,19 @@ const handleDownload = () => {
 
     <div class="convert">
       <button v-if="!isAllConverted" @click="handleConvertToKKCard" class="button convert-button button__primary">
-        Convert to Koikatsu Card<span v-if="cardsCount">({{ cardsCount }})</span>
+        Convert to Koikatsu Card / 转为 KK 卡<span v-if="cardsCount">({{ cardsCount }})</span>
       </button>
       <div class="download" v-if="convertedFiles.length && isAllConverted">
         <button @click="handleDownloadAsZip" class="button zip-button button__primary">
-          Download as ZIP
+          Download as ZIP / 保存为 ZIP
         </button>
         <button @click="handleDownload" class="button download-button button__secondary">
-          Download
+          Download / 下载
         </button>
       </div>
 
       <button @click="handleCleanFile" class="button clean-button button__secondary">
-        Clean
+        Clean / 清除
       </button>
     </div>
 
