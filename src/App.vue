@@ -177,14 +177,15 @@ const handleDownload = () => {
 
     p {
       margin-bottom: 5px;
+      color: #00b0ea8d;
+
+      a:hover, &:hover {
+        color: #00AEEA;
+      }
 
       a {
-        text-decoration: none;
         color: #00b0ea8d;
-
-        &:hover {
-          color: #00AEEA;
-        }
+        text-decoration: none;
       }
     }
   }
@@ -293,7 +294,7 @@ const handleDownload = () => {
       color: #E3E5E7;
 
       &.active {
-        color: black;
+        color: #00b0ea;
       }
     }
 
